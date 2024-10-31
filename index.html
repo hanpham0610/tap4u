@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quét nhanh - danh thiếp điện tử - nhanh gọn dễ dàng - quetnhanh.vn</title>
+
+</head>
+
+<body>
+  <div id="app">
+  </div>
+  
+  <script type="module" src="/src/main.js"></script>
+</body>
+<style>
+ 
+  ::-webkit-scrollbar {
+  width: 0px;
+}
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #app {
+      max-width: 768px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    #app {
+      /* max-width: 992px; */
+      width: 100%;
+    }
+  }
+</style>
+<script>
+  window.onload = function() {
+    var app = document.getElementById('app');
+    var img = new Image();
+    img.onload = function() {
+      app.style.height = img.height + 'px'; // Set height equal to image height
+    }
+    // img.src = "/img/bg/bg-quetnhanh.png";
+    img.src = "/img/bg/bg4.png";
+  }
+  </script>
+
+</html>

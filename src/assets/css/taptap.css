@@ -1,0 +1,57 @@
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100px); /* Bắt đầu từ vị trí bên trái */
+    animation: slideIn 2s forwards; /* Thời gian 1s, chạy một lần */
+  }
+  
+  /* Định nghĩa animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); /* Vị trí bắt đầu ngoài màn hình */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Vị trí kết thúc ở chỗ ban đầu */
+    }
+  }
+
+/* CSS cho hiệu ứng di chuyển từ phải vào */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px); /* Bắt đầu từ vị trí bên phải */
+    animation: slideInRight 1s forwards ease-in-out; /* Thời gian 1s, chạy một lần */
+  }
+  
+  /* Định nghĩa animation */
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); /* Vị trí bắt đầu ngoài màn hình bên phải */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Vị trí kết thúc ở chỗ ban đầu */
+    }
+  }
+  
+
+  /* CSS cho hiệu ứng di chuyển từ dưới lên */
+.slide-up {
+    opacity: 0;
+    transform: translateY(10px); /* Bắt đầu từ vị trí dưới */
+    animation: slideUp 1s forwards ease-out; /* Thời gian 1s, chạy một lần */
+  }
+  
+  /* Định nghĩa animation */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* Vị trí bắt đầu dưới */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Vị trí kết thúc ở chỗ ban đầu */
+    }
+  }
+  
